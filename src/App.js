@@ -2,8 +2,8 @@ import {ReactComponent as LeftSolid} from './left-solid.svg';
 import {ReactComponent as HorizontalDotted} from './horizontal-dash.svg';
 import {ReactComponent as VerticalDotted} from './vertical-dash.svg';
 import {ReactComponent as RightSolid} from './right-solid.svg';
-import {ReactComponent as DownSolid} from './right-solid.svg';
-import {ReactComponent as UpSolid} from './right-solid.svg';
+import {ReactComponent as DownSolid} from './down-solid.svg';
+import {ReactComponent as UpSolid} from './up-solid.svg';
 
 
 import { useState} from 'react';
@@ -84,9 +84,9 @@ function App() {
       case "row-reverse":
         return <LeftSolid width="100%" />;
       case "col":
-        return <HorizontalDotted width="100%" opacity="85%"/> ;
+        return <HorizontalDotted width="100%" /> ;
       case "col-reverse":
-        return <HorizontalDotted width="100%" opacity="85%"/> ;
+        return <HorizontalDotted width="100%" /> ;
       default:
         return;
     }
@@ -95,9 +95,9 @@ function App() {
   const verticalAxis = () => {
     switch (flexDirection) {
       case "row":
-        return <VerticalDotted height="100%" opacity="85%"/>;
+        return <VerticalDotted height="100%" />;
       case "row-reverse":
-        return <VerticalDotted height="100%" opacity="85%"/>;
+        return <VerticalDotted height="100%" />;
       case "col":
         return <DownSolid height="100%"/> ;
       case "col-reverse":
