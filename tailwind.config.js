@@ -7,6 +7,13 @@ module.exports = {
         '102': '28rem',
         '106': '32rem',
       },
+      fontFamily: {
+        'source-sans': ['Source Sans Pro', 'sans-serif']
+      },
+      colors: {
+        'main-axis': '#54B60F',
+        'cross-axis': '#81A8FF',
+      }
     },
   },
   variants: {
